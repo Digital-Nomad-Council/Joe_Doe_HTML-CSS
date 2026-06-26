@@ -57,11 +57,4 @@ footer {
   color: #777;
 }
 
-/* Mobile‑first responsive grid */
-@media (min-width: 640px) {
-  main {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
-  }
-}
+

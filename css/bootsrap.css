@@ -1,0 +1,10 @@
+/* Version 2 – Responsive Layout Styles */
+
+/* Mobile‑first responsive grid */
+@media (min-width: 640px) {
+  main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+}
