@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+/* Version 2 – CSS3 Enhancement */
+
+:root {
+  --primary-color: #2c3e50;
+  --secondary-color: #34495e;
+  --accent-color: #e74c3c;
+  --background-color: #ffffff; /* light background */
+  --card-background: #f9f9f9;
+  --text-color: #333333;
+  --font-family: 'Inter', sans-serif;
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--background-color);
+  color: var(--text-color);
+  line-height: 1.6;
+  padding: 1rem;
+}
+
+header, nav, main, footer {
+  margin-bottom: 1.5rem;
+}
+
+/* Navigation */
+nav a {
+  color: var(--primary-color);
+  text-decoration: none;
+  margin-right: 1rem;
+}
+nav a:hover {
+  color: var(--accent-color);
+}
+
+/* Card Layout */
+section {
+  background: var(--card-background);
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  margin-bottom: 1rem;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #777;
+}
+
+/* Mobile‑first responsive grid */
+@media (min-width: 640px) {
+  main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+}
